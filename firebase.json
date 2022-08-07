@@ -1,0 +1,33 @@
+{
+  "functions": {
+    "source": "functions"
+  },
+  "hosting": {
+    "public": "out",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  },
+  "headers":{
+    "source": "/api.json",
+    "headers": [{
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    }]
+  },
+  "redirects":{
+    "source":"/some/page",
+    "destination": "/other/page",
+    "type": 301
+  },
+  "emulators": {
+    "hosting": {
+      "port": 5033
+    },
+    "ui": {
+      "enabled": true
+    }
+  }
+}
