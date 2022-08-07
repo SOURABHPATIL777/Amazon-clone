@@ -10,15 +10,17 @@
       "**/node_modules/**"
     ]
   },
-  "headers":{
+  "headers": {
     "source": "/api.json",
-    "headers": [{
-      "key": "Access-Control-Allow-Origin",
-      "value": "*"
-    }]
+    "headers": [
+      {
+        "key": "Access-Control-Allow-Origin",
+        "value": "*"
+      }
+    ]
   },
-  "redirects":{
-    "source":"/some/page",
+  "redirects": {
+    "source": "/some/page",
     "destination": "/other/page",
     "type": 301
   },
